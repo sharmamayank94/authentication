@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            
+        <link rel="stylesheet" href="/styles/indexcss.css">
+        <title>Authentication</title>
+    </head>
+    <body>
+        
+        <ul class="navbar">
+            <li>Home</li> 
+            <li>About</li>
+            <%if(username){%>
+                <li><button onclick="logout()">LogOut</button></li>
+            <%}%>
+            <%if(!username){%>
+            <li class="right"><a href="login">Login</a></li>
+            <li class="right"><a href="register">Register</a></li>
+            <%}%>
+        </ul>
+
+        <%if(username){%>
+            <p><%=username %></p>
+        <%}%>
+
+        <%if(username){%>
+        <div class = "note">
+           <button onclick = "showinputbar()" class="addnote">Add Note</button>
+            <br/><br/>
+        </div>
+        <div class = "inputbar" style="display: none">
+            <input type = "text" class = "title">
+            <textarea  class = "newnote" cols = '70' rows = '5'></textarea>
+            <button onclick = "addnote()">Submit</button>
+        </div>
+        
+        <%}%>
+        
+        <div class = "noteplaceholder">
+            
+        </div>
+        
+        <script src="index.js"></script>
+    </body>
+</html>

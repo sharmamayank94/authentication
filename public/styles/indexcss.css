@@ -1,0 +1,68 @@
+body{
+    margin:0px;
+}
+
+ul{
+    margin:0px;
+    list-style-type: none;
+    display: inline-block;
+    background-color: rgb(29, 116, 202);
+    width:100%;
+    }
+
+p{
+    margin: 20px;
+}
+
+.form{
+    padding:20px;
+    background-color: ghostwhite;
+    width: 400px;
+    margin:auto;
+    margin-top: 100px;
+}
+form{
+    width: 200px;
+    margin: auto;
+}
+li{
+    color:white;
+    padding: 20px;
+    margin: 0px 10px;
+    display:inline-block;
+}
+li:hover{
+    background-color:  rgb(4, 85, 167);
+}
+li.right{
+    margin-right: 70px;
+   float:right;
+}
+a{
+    color: white;
+}
+
+.addnote{
+    background-color: rgb(29, 116, 202);
+    border-radius: 10px;
+    height: 50px;
+    width: 200px;
+    margin-top: 50px;
+    border-color: rgb(109, 179, 248);
+    
+}
+
+.note{
+    background-color: ghostwhite;
+    width: 200px;
+    margin: auto;
+}
+
+.inputbar{
+    width: 500px;
+    margin: auto;
+}
+
+.noteplaceholder{
+    margin: 10px;
+}
